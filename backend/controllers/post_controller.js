@@ -1,7 +1,7 @@
 import sharp from "sharp";
 import { Post } from "../models/post_model.js";
 import { User } from "../models/user_model.js";
-
+import {Comment} from "../models/comment_model.js"
 export const addNewPost = async (req, res) => {
     try {
         const { caption } = req.body;

@@ -5,10 +5,11 @@ const conversationSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     }],
-    message : [{
-        type:mongoose.Schema.Types.ObjectId,
+    messages: [{
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Message'
     }]
 });
 
-export default Conversation = mongoose.model('Conversation', conversationSchema)
+const Conversation = mongoose.model('Conversation', conversationSchema);
+export default Conversation;
